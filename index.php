@@ -40,7 +40,7 @@ $app->get('/admin/login', function() {
 
 $app->post('/admin/login', function() {
 
-	User::login(post('deslogin'), post('despassword'));
+	User::login(post('login'), post('password'));
 
 	header("Location: /admin");
 	exit;
